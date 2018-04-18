@@ -27,8 +27,5 @@ Mongoclient.connect(url,(err,client) =>{
         console.log(docs);
     }, (err) => {
         console.log(err);
-    })
-
-
-    
+    });    
 })
