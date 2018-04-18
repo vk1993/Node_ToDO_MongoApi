@@ -32,6 +32,6 @@ Mongoclient.connect(url,(err,client) =>{
     // });
 
     db.collection("User").findOneAndDelete({name : "Jitu"}).then((result) =>{
-        console.log(`${result.value.name} your file is goingto delete`);
+        console.log(`${result.value.name + result.value.age} your file is goingto delete`);
     })
 })
